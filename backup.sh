@@ -43,7 +43,7 @@ while getopts fd OPTION ;
 	d) tar --exclude='/home/user/VirtualBox VMs/Debian' --exclude='/home/user/VirtualBox VMs/zabbix*' -cpf $dest_dir/$DATE'-diff'.tar -N $dest_dir/'backup-full'.tar --totals --verbose $source_dir
 	esac
 	echo " "
-	echo "Auf Backup vorhandene Ordner und Dateien":
+	echo "Auf Backup vorhandene Ordner und Dateien:"
 	echo " "
 	ls -la /media/user/eindeutigePlattenID
 done
